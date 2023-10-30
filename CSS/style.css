@@ -1,0 +1,580 @@
+/*================ Start Global Values  ================*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+:root {
+  --bg-img-color: #FBFBFB;
+  --main-section-color: #F7F7F7;
+  --bg-icon-form: #F4F4F4;
+  --layer-color: #000000aa;
+  --team-color: #5B5B5B;
+  --footer-color: #1C1C1C;
+}
+
+@media (min-width: none) {
+.container {
+  width: 100%;
+}
+}
+/* Start Section title */
+.sec-title {
+  margin-bottom: 4.375rem;
+}
+.sec-title h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.sec-title h3::after {
+  content: "";
+  width: 100%;
+  height: 1.75rem;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -0.4375rem;
+  left: 0;
+  z-index: -1;
+}
+/* End Section title */
+
+/*================ End Global Values  ================*/
+
+
+/*================ Start Navbar ================*/
+nav {
+  background-color: #fff;
+}
+nav .container .navbar-brand {
+  letter-spacing: 1.25px;
+  font-size: 18px;
+  border: none;
+}
+nav .container .navbar-toggler {
+  border: none !important;
+}
+nav .container .navbar-nav {
+  width: 37.5rem;
+}
+nav .container .nav-item a {
+  font-size: .875rem;
+  padding: 0 !important;
+  position: relative;
+}
+nav .container .nav-item a:hover {
+  --bs-link-color-rgb: none;
+}
+nav .container .nav-item a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: 0.3s all;
+}
+nav .container .nav-item .active::after {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  nav .container {
+    min-width: 100vw !important;
+  }
+  nav .container .navbar-nav {
+    width: fit-content;
+    margin: 0px auto;
+  }
+  nav .container .nav-item {
+    margin: .9375rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav .container .nav-item a {
+    width: fit-content;
+    color: #000;
+  }
+  .collapse {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-top: 1px solid rgba(12, 12, 12, 0.04);
+    background-color: #fff;
+    margin-top: 5px;
+    padding-block: 0.9375rem;
+    color: #000 !important;
+  }
+  .collapse ul{
+    width: fit-content !important;
+    margin-left: auto !important ;
+    margin-right: auto !important ;
+  }
+  .collapse li {
+    margin: .9375rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .collapse li a {
+    width: fit-content ;
+    color: #000 ;
+  }
+  .collapse li a::after {
+    height: 2px ;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none ;
+  }
+}
+/*================ End Navbar ================*/
+
+
+/*================ Start Home Section ================*/
+.home {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+.home .layer {
+  background-color: var(--layer-color);
+}
+.home .home-content h5 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.home .home-content h1 {
+  font-size: 3.625rem;
+}
+.home .home-content h1 span::after {
+  content: "|";
+  animation: typing 8s ease-in-out  infinite forwards;
+}
+/* Start Animation */
+@keyframes typing {
+  0% {content: "L|";}
+  1.36% {content: "La|";}
+  2.72% {content: "Lar|";}
+    4.08% {content: "Larr|";}
+    5.44% {content: "Larry|";}
+    6.80% {content: "Larry |";}
+    8.16% {content: "Larry D|";}
+    9.52% {content: "Larry Da|";}
+    10.87% {content: "Larry Dan|";}
+    12.23% {content: "Larry Dani|";}
+    13.59% {content: "Larry Danie|";}
+    14.95% {content: "Larry Daniel|";}
+    16.31% {content: "Larry Daniels|";}
+    17.67% {content: "Larry Daniels|";}
+    19.03% {content: "Larry Daniels|";}
+    20.39% {content: "Larry Daniels|";}
+    21.75% {content: "Larry Daniels|";}
+    23.11% {content: "Larry Daniel|";}
+    24.47% {content: "Larry Danie|";}
+    25.83% {content: "Larry Dani|";}
+    27.19% {content: "Larry Dan|";}
+    28.55% {content: "Larry Da|";}
+    29.91% {content: "Larry D|";}
+    31.27% {content: "Larry |";}
+    32.63% {content: "Larry|";}
+    33.99% {content: "Larr|";}
+    35.35% {content: "Lar|";}
+    36.71% {content: "La|";}
+    38.07% {content: "L|";}
+    39.43% {content: "|";}
+    40.79% {content: "D|";}
+    42.15% {content: "De|";}
+    43.51% {content: "Dev|";}
+    44.87% {content: "Deve|";}
+    46.23% {content: "Devel|";}
+    47.59% {content: "Develo|";}
+    48.95% {content: "Develop|";}
+    50.31% {content: "Develope|";}
+    51.67% {content: "Developer|";}
+    53.03% {content: "Developer|";}
+    54.39% {content: "Developer|";}
+    55.75% {content: "Developer|";}
+    57.11% {content: "Developer|";}
+    58.47% {content: "Develope|";}
+    59.83% {content: "Develop|";}
+    61.19% {content: "Develo|";}
+    62.55% {content: "Devel|";}
+    63.91% {content: "Deve|";}
+    65.27% {content: "Dev|";}
+    66.63% {content: "De|";}
+    67.99% {content: "D|";}
+    69.35% {content: "|";}
+    70.71% {content: "D|";}
+    72.07% {content: "De|";}
+    73.43% {content: "Des|";}
+    74.79% {content: "Desi|";}
+    76.15% {content: "Desig|";}
+    77.51% {content: "Design|";}
+    78.87% {content: "Designe|";}
+    80.23% {content: "Designer|";}
+    81.59% {content: "Designer|";}
+    82.95% {content: "Designer|";}
+    85.67% {content: "Designer|";}
+    88.39% {content: "Designer|";}
+    91.11% {content: "Designe|";}
+    92.47% {content: "Design|";}
+    93.83% {content: "Desig|";}
+    95.19% {content: "Desi|";}
+    96.55% {content: "Des|";}
+    97.91% {content: "De|";}
+  98.5% {content: "D|";}
+  100% {content: "|";}
+}
+/* End Animation  */
+/* Start Responsive */
+@media screen and (max-width:1168px) {
+  .home .home-content h1 {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .home .home-content h1 {
+    font-size: 1.875rem ;
+  }
+}
+@media screen and (max-width:px) {
+  .home .home-content h1 {
+    font-size: 1.875rem ;
+  }
+}
+/* End Responsive */
+
+/* home icons */
+.home .home-content .home-icons ul li {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  background-color: #0000005b;
+}
+.home .home-content .home-icons ul li i {
+  font-size: .75rem;
+}
+
+/*================ End Home Section ================*/
+
+
+
+
+
+/*================ Start About Section ================*/
+.about .container .about-img {
+  position: relative;
+}
+.about .container .about-img::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  z-index: 1;
+  position: absolute;
+  left: -1.1563rem;
+  bottom: -1.875rem;
+}
+.about .container .about-title h3 {
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+.about .container .about-title p {
+  letter-spacing: 2px;
+}
+.about .container .about-progress .progress {
+  height: 30px;
+  box-shadow: 0 0 10px 1px #0000005e inset !important;
+}
+.about .progress .first-prog {
+  width: 95%;
+  font-size: .75rem;
+  font-weight: 500;
+}
+.about .progress .first-prog::after {
+  content: "95%";
+  color: #fff;
+  position: absolute;
+  right: 5px;
+}
+.about .progress .second-prog {
+  width: 80%;
+  font-size: .75rem;
+  font-weight: 500;
+}
+.about .progress .second-prog::after {
+  content: "80%";
+  color: #fff;
+  position: absolute;
+  right: 5px;
+}
+.about .progress .third-prog {
+  width: 90%;
+  font-size: .75rem;
+  font-weight: 500;
+}
+.about .progress .third-prog::after {
+  content: "90%";
+  color: #fff;
+  position: absolute;
+  right: 5px;
+}
+.about .about-btn .btn:first-child{
+  font-size: .875rem;
+  background-color: #000;
+  color: #eae8e8;
+  border: 1px solid #000;
+  transition: 0.3s all;
+}
+.about .about-btn .btn:hover:first-child {
+  background-color: #fff;
+  color: #000;
+}
+.about .about-btn .btn:last-child{
+  font-size: .875rem;
+  color: #000;
+  border: 1px solid #000;
+}
+.about .about-btn .btn:hover:last-child {
+  background-color: #000;
+  color: #eae8e8;
+}
+
+/*================ End About Section ================*/
+
+
+
+/*================ Start Services Section ================*/
+
+.services {
+  background-color: var(--main-section-color);
+}
+.services  .card-icon {
+  width:  4.375rem;
+  height: 4.375rem;
+  background-color: var(--bg-icon-form);
+  transition: 0.5s all;
+
+}
+.services .card:hover .card-icon{
+  background-color: var(--footer-color);
+  color: white;
+}
+.services .card .card-body h6{
+  font-size: 1.125rem;
+  font-weight: 800;
+
+}
+
+/*================ End Services Section ================*/
+
+
+
+/*================ Start Portfolio (Works) Section ================*/
+.works .nav-pills .nav-link {
+  position: relative;
+}
+.works .nav-pills .nav-link::after {
+  content: "";
+  width: 0%;
+  height: .1563rem;
+  background-color: #000;
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  transition: 0.3s all;
+}
+.works .nav-pills .nav-link.active {
+  background-color: unset;
+  border-radius: unset;
+
+}
+.works .nav-pills .nav-link.active::after {
+  width: 100%;
+}
+.works .porto-img-layer {
+  width: 97%;
+  height: 97%; 
+  background-color: white; 
+  transform: translateY(15px);
+  opacity: 0;
+  transition: 0.5s all;
+}
+.works .porto-img:hover .porto-img-layer {
+  transform: translateY(0);
+  opacity: 1;
+}
+.works .porto-img-layer h6 {
+  letter-spacing: 2px;
+  transform: translateY(-20px);
+  transition: 0.5s all;
+}
+.works .porto-img:hover .porto-img-layer h6 {
+  transform: translateY(0px);
+}
+.works .porto-img-layer .porto-icons ul li {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #000;
+  transition: 0.3s all;
+
+}
+.works .porto-img-layer .porto-icons ul li:hover {
+  background-color: transparent;
+  color: #000 !important;
+  cursor: pointer;
+}
+/*================ End Portfolio (Works) Section ================*/
+
+
+
+/*================ Start Testimonials (Clients) Section ================*/
+
+.clients {
+  background-color: var(--main-section-color);
+}
+.clients .client-area .client-img {
+  width: 5.625rem;
+  height: 5.625rem;
+}
+.clients .client-area p:first-child {
+  font-size: 15px;
+}
+.clients .client-area p:last-child {
+  font-size: 12px;
+}
+.clients .btn-carousel {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #c9c9c9 !important;
+}
+
+.clients button.active {
+  transition: 0s;
+  background-color: #869791 !important;
+}
+
+/* ============== Start Counter =============== */
+.clients .counter h5 {
+  font-weight: 900;
+}
+.clients .counter p {
+  font-size: .9375rem;
+}
+/* ============== End Counter =============== */
+/*================ End Testimonials (Clients) Section ================*/
+
+
+
+/*================ Start Our Team (Team) Section ================*/
+
+.team {
+  background-color: var(--main-section-color);
+}
+.team .card {
+  background-color: var(--team-color);
+}
+.team .team-img {
+  overflow:hidden;
+}
+.team .team-img img {
+  transition: 0.5s all;
+}
+
+.team .team-img:hover img {
+  transform: scale(1.2);
+}
+.team .team-img .team-img-layer{
+  width: 97%;
+  height: 97%;
+  background-color: #ffffffec;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.team .card:hover .team-img-layer {
+  opacity: 1;
+  transform:  scale(1) rotateY(1turn);
+}
+
+.team .team-img .team-img-layer ul li {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  border: 1px solid #000;
+  color: white;
+  transition: 0.5s all;
+}
+.team .team-img .team-img-layer ul li a {
+  font-size: 1.25rem;
+}
+.team .team-img .team-img-layer ul li:hover{
+  background-color: white;
+  color: black ;
+}
+.team .team-img .team-img-layer ul li:hover a {
+  color: #000 !important;
+}
+
+/*================ End Our Team (Team) Section ================*/
+
+
+
+/*================ Start Contact Us Section ================*/
+.contact .card .contact-icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  background-color: var(--bg-icon-form);
+  transition: 0.5s all;
+}
+.contact .card:hover .contact-icon {
+  background-color: var(--footer-color);
+  color: white;
+}
+.contact .field {
+  background-color: var(--bg-icon-form) !important;
+
+}
+.contact .form-control:focus {
+  border-color: none;
+  box-shadow:none;
+}
+.contact textarea {
+  min-width: 15%;
+  max-width: 100%;
+  max-height: 9.375rem;
+  resize: both;
+}
+.contact form .btn {
+  background-color: #000;
+  color: white;
+  border: 1px solid #000;
+  transition: 0.3s all;
+}
+.contact form .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/*================ End Contact Us Section ================*/
+
+
+
+/*================ Start Footer Section ================*/
+footer {
+  background-color: var(--footer-color);
+}
+/*================ End Footer Section ================*/
